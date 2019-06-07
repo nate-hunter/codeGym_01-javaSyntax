@@ -10,11 +10,20 @@ Financial expectations
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        int n = scanner.nextInt();
+//
+//        String phrase = "I will earn $" + n + " per hour";
+//
+//        System.out.println(phrase);
 
-        int n = scanner.nextInt();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String phrase = "I will earn $" + n + " per hour";
+        String n = reader.readLine();
+        int num = Integer.parseInt(n);
+
+        String phrase = "I will earn $" + num + " per hour";
 
         System.out.println(phrase);
     }
